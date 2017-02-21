@@ -1,5 +1,5 @@
 # Pig Latin Word Translator
-Pig Latin Word Translator will convert a regular English word into its [Pig Latin](https://en.wikipedia.org/wiki/Pig_Latin#cite_note-7) equivalent.
+Pig Latin Word Translator will convert a regular English word into its [Pig Latin](https://en.wikipedia.org/wiki/Pig_Latin#cite_note-7) equivalent. This utility is written in Ruby and to run it, your machine must have Ruby installed. For more on installing Ruby, read [this](https://www.ruby-lang.org/en/documentation/installation/).
 
 ## Setup and use
 To get started, clone this repository.
@@ -32,17 +32,33 @@ Optionally combine the instantiation and translation execution into a single lin
 ```
 
 ## Features
-1. Translate words that begin with consonants.
-2. Translate words that begin with vowels.
+Translate words that begin with consonants.
+```
+> PigLatinWordTranslator.new('pig').translate
+# => "igpay"
+```
+Translate words that begin with vowels.
+```
+> PigLatinWordTranslator.new('arrow').translate
+# => "arrowway"
+```
 
-#### Special Features
-1. Translates words that begin with specific consonant clusters including 'ch', 'sm', 'sh'.
-2. Translates words that begin and end with the same consonant clusters, e.g. sheesh
+## Special Features
+Translate words that begin with specific consonant clusters including 'ch', 'sm', 'sh'.
+```
+> PigLatinWordTranslator.new('cheers').translate
+# => "eerschay"
+```
+Translate words that begin and end with the same consonant clusters, e.g. sheesh
+```
+> PigLatinWordTranslator.new('sheesh').translate
+# => "eeshay"
+```
 
 ## Testing
-This project is thoroughly tested with minitest. To run the test from the project root run:
+This project is thoroughly tested with minitest. To run the test file from the project root execute:
 ```
-% ruby test/pig_latin_word_translator_test.rb 
+% ruby test/pig_latin_word_translator_test.rb
 ```
 
 ## Next Steps
