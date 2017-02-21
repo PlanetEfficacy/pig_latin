@@ -63,6 +63,7 @@ This project is thoroughly tested with minitest. To run the test file from the p
 
 ## Next Steps
 Some ideas for expanding this translator's functionality are to:
+
 1. Make the translator case insensitive
 2. Make the translator able to convert multiple words at a time
 3. Add additional consonant group support
