@@ -12,7 +12,7 @@ Navigate to this project's root directory. Open an `irb` session:
 % cd pig_latin
 % irb
 ```
-Require the translator.
+Once in irb, require the translator.
 ```
 > require './lib/pig_latin_word_translator.rb'
 ```
@@ -38,6 +38,12 @@ Optionally combine the instantiation and translation execution into a single lin
 #### Special Features
 1. Translates words that begin with specific consonant clusters including 'ch', 'sm', 'sh'.
 2. Translates words that begin and end with the same consonant clusters, e.g. sheesh
+
+## Testing
+This project is thoroughly tested with minitest. To run the test from the project root run:
+```
+% ruby test/pig_latin_word_translator_test.rb 
+```
 
 ## Next Steps
 Some ideas for expanding this translator's functionality are to:
